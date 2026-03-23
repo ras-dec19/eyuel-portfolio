@@ -5,17 +5,22 @@ export const RevealOnScroll = ({ children }) => {
 
   useEffect(() => {
     const currentRef = ref.current;
+    if (!currentRef) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          currentRef?.classList.add("visible");
+          currentRef.classList.add("visible");
+          observer.unobserve(currentRef);
         }
       },
-      { threshold: 0.2, rootMargin: "0px 0px -50px 0px" }
+      {
+        threshold: 0.01,
+        rootMargin: "0px",
+      }
     );
 
-    if (currentRef) observer.observe(currentRef);
+    observer.observe(currentRef);
 
     return () => observer.disconnect();
   }, []);
