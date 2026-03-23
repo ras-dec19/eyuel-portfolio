@@ -21,7 +21,7 @@ export const Home = () => {
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a
-              href="/resume/Resume.pdf"
+              href={`${import.meta.env.BASE_URL}resume/Resume.pdf`}
               target="_blank"
               rel="noreferrer"
               className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"

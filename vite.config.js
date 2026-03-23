@@ -6,5 +6,5 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   assetsInclude: ["**/*.pka"],
-  base: "/eyuel-portfolio",
+  base: "/eyuel-portfolio/",
 })
