@@ -8,9 +8,18 @@ body,
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
-  font-family: "Space-Grotesk", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
   background: #0a0a0a;
   color: #f3f4f6;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+a {
+  font-family: "Cormorant Garamond", serif;
 }
 
 *,
