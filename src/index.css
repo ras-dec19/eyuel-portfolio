@@ -1,11 +1,22 @@
 @import "tailwindcss";
 
-html, body {
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
-  font-family: "Space-Grotesk", sans-sarif;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: "Space-Grotesk", sans-serif;
   background: #0a0a0a;
-  color: #f3f4f6; 
+  color: #f3f4f6;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 @layer utilities {
@@ -38,9 +49,11 @@ html, body {
 }
 
 .reveal {
+  width: 100%;
+  max-width: 100%;
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.75 ease, transform 0.7s ease;
+  transition: opacity 0.75s ease, transform 0.7s ease;
 }
 
 .reveal.visible {
