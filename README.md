@@ -1,4 +1,4 @@
-# Beautiful Portfolio
+# Portfolio
 
 A personal portfolio website built with **React** and **Vite** to showcase projects, technical skills, and interactive project details in a clean, modern interface.
 
