@@ -81,7 +81,11 @@ beautiful-portfolio/
     App.jsx              # Root app component
     main.jsx             # Vite entry point
     index.css            # Global styles
+  eslint.config.js
+  index.html
+  package-lock.json
   package.json
+  README.md
   vite.config.js
 ```
 
